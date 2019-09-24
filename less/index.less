@@ -5,6 +5,10 @@ body {
   font-family: "Roboto", sans-serif;
 }
 
+.container {
+  background-color: #def7fe;
+}
+
 header {
   display: flex;
   /* flex-direction: row-reverse; */
@@ -14,47 +18,39 @@ header {
   width: 100%;
   margin-bottom: 20px;
   height: 500px;
+  h1 {
+    display: flex;
+    justify-content: center;
+    color: white;
+    font-size: 3.5rem;
+    margin-top: 10px;
+    width: 33.3%;
+    height: 100px;
+    border: 1px solid red;
+  }
+  nav {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-start;
+    width: 33.3%;
+    height: 50px;
+    padding-top: 10px;
+    border: 1px solid red;
+    a {
+      font-size: 1.2em;
+      color: white;
+      text-decoration: none;
+      margin: 0 10px;
+      font-family: "Roboto";
+    }
+  }
+  img {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 300px;
+  }
 }
-
-header nav {
-  display: flex;
-  justify-content: flex-end;
-  align-items: flex-start;
-  width: 33.3%;
-  height: 50px;
-  padding-top: 10px;
-  border: 1px solid red;
-}
-
-h1,
-a {
-  font-size: 1.2em;
-  color: white;
-  text-decoration: none;
-  margin: 0 10px;
-  font-family: "Roboto";
-}
-
-h1 {
-  display: flex;
-  justify-content: center;
-  font-size: 1.8rem;
-  width: 33.3%;
-  height: 100px;
-  border: 1px solid red;
-}
-
-header img {
-  display: flex;
-  justify-content: center;
-  width: 100%;
-  height: 300px;
-}
-
-/* .body-upper {
-  display: flex;
-  flex-direction: column;
-} */
 
 .top-btn {
   display: flex;
@@ -62,15 +58,15 @@ header img {
   align-items: center;
   border: 1px solid red;
 }
+
 .cta {
-  border: 1px solid red;
-  /* margin: 200px 0; */
   width: 500px;
   height: 50px;
   color: white;
   background-color: slateblue;
   border-radius: 5px;
   font-size: 1.5rem;
+  border: 1px solid red;
 }
 
 .body-upper {
@@ -83,10 +79,13 @@ i {
   display: flex;
   justify-content: flex-end;
 }
-.text-container {
+
+.text-container,
+.body-mid {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  font-size: 1.2rem;
   margin: 10px;
   height: 200px;
   padding: 3px;
@@ -107,18 +106,16 @@ footer {
   justify-content: flex-end;
   margin-bottom: 20px;
   height: 250px;
-}
-
-footer nav {
-  display: flex;
-  justify-content: center;
-  align-items: flex-end;
-  width: 100%;
-  border: 1px solid red;
-}
-
-footer a {
-  color: white;
+  nav {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    width: 100%;
+    border: 1px solid red;
+    a {
+      color: white;
+    }
+  }
 }
 
 .bottom-btn {
