@@ -5,22 +5,33 @@
     }
     .banner {
       height: 40vh;
-      background-color: blue;
+      background-image: url("../images/confetti-2.jpg");
       .container {
         .flex-col();
         align-items: center;
         justify-content: center;
         h1 {
+          color: white;
+          font-size: 6rem;
         }
         p {
+          color: white;
         }
         .btn {
           .btn();
+          text-align: center;
+          @media @mobile {
+            width: 100vw;
+          }
+        }
+        .btn:hover {
+          color: slateblue;
+          border: 1px solid slateblue;
+          background: white;
         }
       }
     }
     .about {
-      background-color: red;
       .container {
         h2 {
           margin-bottom: 2rem;
@@ -45,6 +56,7 @@
             }
             i {
               font-size: 4rem;
+              color: darkorange;
             }
             h3 {
               margin: 1rem 0;
@@ -57,14 +69,24 @@
         }
       }
     }
-    .testimonials,
-    .collab {
+    .testimonials {
+      background-image: url("../images/confetti-2.jpg");
+      color: white;
       .container {
         text-align: center;
         h2 {
         }
         p {
         }
+      }
+    }
+  }
+  .collab {
+    .container {
+      text-align: center;
+      h2 {
+      }
+      p {
       }
     }
   }

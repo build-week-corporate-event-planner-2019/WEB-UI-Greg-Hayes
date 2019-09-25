@@ -98,6 +98,8 @@ video {
 html,
 body {
   font-size: 62.5%;
+  font-family: "Poppins", sans-serif;
+  color: indigo;
 }
 h1 {
   font-size: 4rem;
@@ -126,8 +128,9 @@ img {
   margin: 0 auto;
 }
 .main-header {
-  background-color: green;
+  background: slateblue;
   height: 50px;
+  color: white;
 }
 .main-header .container {
   display: flex;
@@ -171,7 +174,7 @@ img {
 }
 .home-page .main-content .banner {
   height: 40vh;
-  background-color: blue;
+  background-image: url("../images/confetti-2.jpg");
 }
 .home-page .main-content .banner .container {
   display: flex;
@@ -179,14 +182,34 @@ img {
   align-items: center;
   justify-content: center;
 }
+.home-page .main-content .banner .container h1 {
+  color: white;
+  font-size: 6rem;
+}
+.home-page .main-content .banner .container p {
+  color: white;
+}
 .home-page .main-content .banner .container .btn {
   color: white;
   background-color: slateblue;
+  width: 600px;
+  height: 50px;
+  font-size: 3rem;
+  text-decoration: none;
   padding: 0.5rem 1.5rem;
+  border: 1px solid slateblue;
   border-radius: 0.5rem;
+  text-align: center;
 }
-.home-page .main-content .about {
-  background-color: red;
+@media (max-width: 600px) {
+  .home-page .main-content .banner .container .btn {
+    width: 100vw;
+  }
+}
+.home-page .main-content .banner .container .btn:hover {
+  color: slateblue;
+  border: 1px solid slateblue;
+  background: white;
 }
 .home-page .main-content .about .container h2 {
   margin-bottom: 2rem;
@@ -219,6 +242,7 @@ img {
 }
 .home-page .main-content .about .container .about-boxes .box i {
   font-size: 4rem;
+  color: darkorange;
 }
 .home-page .main-content .about .container .about-boxes .box h3 {
   margin: 1rem 0;
@@ -227,12 +251,18 @@ img {
 .home-page .main-content .about .container .about-boxes .box p {
   font-size: 1.4rem;
 }
-.home-page .main-content .testimonials .container,
-.home-page .main-content .collab .container {
+.home-page .main-content .testimonials {
+  background-image: url("../images/confetti-2.jpg");
+  color: white;
+}
+.home-page .main-content .testimonials .container {
+  text-align: center;
+}
+.home-page .collab .container {
   text-align: center;
 }
 .main-footer {
-  background: red;
+  background: slateblue;
   padding: 1.5rem 0;
 }
 .main-footer .container {
@@ -241,9 +271,13 @@ img {
 .main-footer .container nav a {
   font-size: 1.4rem;
   margin-right: 1rem;
-  color: black;
+  color: white;
   text-decoration: none;
 }
 .main-footer .container nav a:last-child {
   margin-right: 0;
+}
+.main-footer .container nav a a:hover {
+  color: white;
+  text-decoration: underline;
 }
