@@ -157,6 +157,9 @@ img {
 .main-header .container nav a:last-child {
   margin-right: 0;
 }
+.main-header .container nav a:hover {
+  text-decoration: underline;
+}
 .main-header .container .burger {
   display: none;
 }
@@ -209,7 +212,6 @@ img {
 }
 .home-page .main-content .banner .container .btn:hover {
   color: darkslateblue;
-  border: 1px solid darkslateblue;
   background: white;
 }
 .home-page .main-content .about .container h2 {
@@ -284,6 +286,13 @@ img {
   background: darkslateblue;
   padding: 1.5rem 0;
 }
+.main-footer h4 {
+  margin-top: 20px;
+  width: 100%;
+  font-size: 1.3rem;
+  color: white;
+  text-align: center;
+}
 .main-footer .container {
   text-align: center;
 }
@@ -296,7 +305,6 @@ img {
 .main-footer .container nav a:last-child {
   margin-right: 0;
 }
-.main-footer .container nav a a:hover {
-  color: white;
+.main-footer .container nav a:hover {
   text-decoration: underline;
 }
