@@ -1,0 +1,36 @@
+.main-header {
+  background-color: green;
+  height: 50px;
+  .container {
+    .flex-row();
+    align-items: center;
+    h1 {
+      font-size: 2.5rem;
+    }
+    nav {
+      margin-left: auto;
+      @media @mobile {
+        display: none;
+      }
+      a {
+        text-decoration: none;
+        color: inherit;
+        font-size: 1.4rem;
+        margin-right: 2rem;
+        &:last-child {
+          margin-right: 0;
+        }
+      }
+    }
+    .burger {
+      display: none;
+      @media @mobile {
+        display: flex;
+        margin-left: auto;
+      }
+      i {
+        font-size: 2rem;
+      }
+    }
+  }
+}
