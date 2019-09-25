@@ -128,7 +128,7 @@ img {
   margin: 0 auto;
 }
 .main-header {
-  background: slateblue;
+  background: darkslateblue;
   height: 50px;
   color: white;
 }
@@ -157,6 +157,9 @@ img {
 .main-header .container nav a:last-child {
   margin-right: 0;
 }
+.main-header .container nav a:hover {
+  text-decoration: underline;
+}
 .main-header .container .burger {
   display: none;
 }
@@ -175,6 +178,7 @@ img {
 .home-page .main-content .banner {
   height: 40vh;
   background-image: url("../images/confetti-2.jpg");
+  background-size: cover;
 }
 .home-page .main-content .banner .container {
   display: flex;
@@ -191,13 +195,13 @@ img {
 }
 .home-page .main-content .banner .container .btn {
   color: white;
-  background-color: slateblue;
+  background-color: darkslateblue;
   width: 600px;
   height: 50px;
   font-size: 3rem;
   text-decoration: none;
   padding: 0.5rem 1.5rem;
-  border: 1px solid slateblue;
+  border: 1px solid darkslateblue;
   border-radius: 0.5rem;
   text-align: center;
 }
@@ -207,8 +211,7 @@ img {
   }
 }
 .home-page .main-content .banner .container .btn:hover {
-  color: slateblue;
-  border: 1px solid slateblue;
+  color: darkslateblue;
   background: white;
 }
 .home-page .main-content .about .container h2 {
@@ -244,6 +247,17 @@ img {
   font-size: 4rem;
   color: darkorange;
 }
+.home-page .main-content .about .container .about-boxes .box img {
+  width: 100px;
+  height: 100px;
+  border-radius: 100px;
+}
+@media (max-width: 600px) {
+  .home-page .main-content .about .container .about-boxes .box img {
+    width: 25vh;
+    height: 25vh;
+  }
+}
 .home-page .main-content .about .container .about-boxes .box h3 {
   margin: 1rem 0;
   font-size: 2.2rem;
@@ -251,9 +265,16 @@ img {
 .home-page .main-content .about .container .about-boxes .box p {
   font-size: 1.4rem;
 }
+.home-page .main-content .about .container .profile #pic {
+  margin: 0 10px;
+}
+.home-page .main-content .about .container .profile h4 {
+  font-size: 1.5rem;
+}
 .home-page .main-content .testimonials {
-  background-image: url("../images/confetti-2.jpg");
   color: white;
+  background-image: url("../images/confetti-2.jpg");
+  background-size: cover;
 }
 .home-page .main-content .testimonials .container {
   text-align: center;
@@ -262,8 +283,15 @@ img {
   text-align: center;
 }
 .main-footer {
-  background: slateblue;
+  background: darkslateblue;
   padding: 1.5rem 0;
+}
+.main-footer h4 {
+  margin-top: 20px;
+  width: 100%;
+  font-size: 1.3rem;
+  color: white;
+  text-align: center;
 }
 .main-footer .container {
   text-align: center;
@@ -277,7 +305,6 @@ img {
 .main-footer .container nav a:last-child {
   margin-right: 0;
 }
-.main-footer .container nav a a:hover {
-  color: white;
+.main-footer .container nav a:hover {
   text-decoration: underline;
 }
