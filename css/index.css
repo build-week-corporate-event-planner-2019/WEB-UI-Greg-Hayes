@@ -1,0 +1,283 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+* {
+  outline: none;
+  box-sizing: border-box;
+}
+html,
+body {
+  font-size: 62.5%;
+  font-family: "Poppins", sans-serif;
+  color: indigo;
+}
+h1 {
+  font-size: 4rem;
+}
+h2 {
+  font-size: 3.2rem;
+  padding-bottom: 10px;
+}
+h4 {
+  font-size: 2.5rem;
+  padding-bottom: 10px;
+}
+p {
+  line-height: 1.5;
+  font-size: 1.6rem;
+  padding-bottom: 10px;
+}
+img {
+  max-width: 100%;
+  height: auto;
+}
+.container {
+  max-width: 800px;
+  width: 90%;
+  height: 100%;
+  margin: 0 auto;
+}
+.main-header {
+  background: slateblue;
+  height: 50px;
+  color: white;
+}
+.main-header .container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.main-header .container h1 {
+  font-size: 2.5rem;
+}
+.main-header .container nav {
+  margin-left: auto;
+}
+@media (max-width: 600px) {
+  .main-header .container nav {
+    display: none;
+  }
+}
+.main-header .container nav a {
+  text-decoration: none;
+  color: inherit;
+  font-size: 1.4rem;
+  margin-right: 2rem;
+}
+.main-header .container nav a:last-child {
+  margin-right: 0;
+}
+.main-header .container .burger {
+  display: none;
+}
+@media (max-width: 600px) {
+  .main-header .container .burger {
+    display: flex;
+    margin-left: auto;
+  }
+}
+.main-header .container .burger i {
+  font-size: 2rem;
+}
+.home-page .main-content section {
+  padding: 3rem 0;
+}
+.home-page .main-content .banner {
+  height: 40vh;
+  background-image: url("../images/confetti-2.jpg");
+}
+.home-page .main-content .banner .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.home-page .main-content .banner .container h1 {
+  color: white;
+  font-size: 6rem;
+}
+.home-page .main-content .banner .container p {
+  color: white;
+}
+.home-page .main-content .banner .container .btn {
+  color: white;
+  background-color: slateblue;
+  width: 600px;
+  height: 50px;
+  font-size: 3rem;
+  text-decoration: none;
+  padding: 0.5rem 1.5rem;
+  border: 1px solid slateblue;
+  border-radius: 0.5rem;
+  text-align: center;
+}
+@media (max-width: 600px) {
+  .home-page .main-content .banner .container .btn {
+    width: 100vw;
+  }
+}
+.home-page .main-content .banner .container .btn:hover {
+  color: slateblue;
+  border: 1px solid slateblue;
+  background: white;
+}
+.home-page .main-content .about .container h2 {
+  margin-bottom: 2rem;
+  text-align: center;
+}
+.home-page .main-content .about .container .about-boxes {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+@media (max-width: 600px) {
+  .home-page .main-content .about .container .about-boxes {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+.home-page .main-content .about .container .about-boxes .box {
+  width: 22%;
+  text-align: center;
+}
+@media (max-width: 600px) {
+  .home-page .main-content .about .container .about-boxes .box {
+    width: 100%;
+    margin-bottom: 3rem;
+  }
+  .home-page .main-content .about .container .about-boxes .box:last-child {
+    margin-bottom: 0;
+  }
+}
+.home-page .main-content .about .container .about-boxes .box i {
+  font-size: 4rem;
+  color: darkorange;
+}
+.home-page .main-content .about .container .about-boxes .box h3 {
+  margin: 1rem 0;
+  font-size: 2.2rem;
+}
+.home-page .main-content .about .container .about-boxes .box p {
+  font-size: 1.4rem;
+}
+.home-page .main-content .testimonials {
+  background-image: url("../images/confetti-2.jpg");
+  color: white;
+}
+.home-page .main-content .testimonials .container {
+  text-align: center;
+}
+.home-page .collab .container {
+  text-align: center;
+}
+.main-footer {
+  background: slateblue;
+  padding: 1.5rem 0;
+}
+.main-footer .container {
+  text-align: center;
+}
+.main-footer .container nav a {
+  font-size: 1.4rem;
+  margin-right: 1rem;
+  color: white;
+  text-decoration: none;
+}
+.main-footer .container nav a:last-child {
+  margin-right: 0;
+}
+.main-footer .container nav a a:hover {
+  color: white;
+  text-decoration: underline;
+}

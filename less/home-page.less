@@ -1,0 +1,93 @@
+.home-page {
+  .main-content {
+    section {
+      padding: 3rem 0;
+    }
+    .banner {
+      height: 40vh;
+      background-image: url("../images/confetti-2.jpg");
+      .container {
+        .flex-col();
+        align-items: center;
+        justify-content: center;
+        h1 {
+          color: white;
+          font-size: 6rem;
+        }
+        p {
+          color: white;
+        }
+        .btn {
+          .btn();
+          text-align: center;
+          @media @mobile {
+            width: 100vw;
+          }
+        }
+        .btn:hover {
+          color: slateblue;
+          border: 1px solid slateblue;
+          background: white;
+        }
+      }
+    }
+    .about {
+      .container {
+        h2 {
+          margin-bottom: 2rem;
+          text-align: center;
+        }
+        .about-boxes {
+          .flex-row();
+          justify-content: space-between;
+          @media @mobile {
+            .flex-col();
+            align-items: center;
+          }
+          .box {
+            width: 22%;
+            text-align: center;
+            @media @mobile {
+              width: 100%;
+              margin-bottom: 3rem;
+              &:last-child {
+                margin-bottom: 0;
+              }
+            }
+            i {
+              font-size: 4rem;
+              color: darkorange;
+            }
+            h3 {
+              margin: 1rem 0;
+              font-size: 2.2rem;
+            }
+            p {
+              font-size: 1.4rem;
+            }
+          }
+        }
+      }
+    }
+    .testimonials {
+      background-image: url("../images/confetti-2.jpg");
+      color: white;
+      .container {
+        text-align: center;
+        h2 {
+        }
+        p {
+        }
+      }
+    }
+  }
+  .collab {
+    .container {
+      text-align: center;
+      h2 {
+      }
+      p {
+      }
+    }
+  }
+}
