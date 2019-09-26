@@ -1,3 +1,4 @@
+// Page content
 .home-page {
   .main-content {
     section {
@@ -19,15 +20,15 @@
           color: white;
         }
         .btn {
-          .btn();
+          .btn(@bg-color, @font-color);
           text-align: center;
           @media @mobile {
             width: 100vw;
           }
         }
         .btn:hover {
-          color: darkslateblue;
-          background: white;
+          color: @bg-color;
+          background: @font-color;
         }
       }
     }
@@ -56,7 +57,7 @@
             }
             i {
               font-size: 4rem;
-              color: darkorange;
+              color: @icon-color;
             }
             img {
               width: 100px;
@@ -92,20 +93,20 @@
       background-size: cover;
       .container {
         text-align: center;
-        h2 {
-        }
-        p {
-        }
+        // For additional styling h2 {
+        // }
+        // p {
+        // }
       }
     }
   }
   .collab {
     .container {
       text-align: center;
-      h2 {
-      }
-      p {
-      }
+      // For additional styling  h2 {
+      //   }
+      //   p {
+      //   }
     }
   }
 }
