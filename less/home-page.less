@@ -101,6 +101,17 @@
     }
   }
   .collab {
+    .btn-two {
+      .btn(@bg-color, @font-color);
+      text-align: center;
+      @media @mobile {
+        width: 100vw;
+      }
+    }
+    .btn-two:hover {
+      color: @bg-color;
+      background: @font-color;
+    }
     .container {
       text-align: center;
       // For additional styling  h2 {
