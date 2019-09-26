@@ -179,6 +179,9 @@ img {
 .main-header .container .burger i {
   font-size: 2rem;
 }
+.main-header .container .burger i:hover {
+  color: orange;
+}
 .mobile-nav {
   background-color: slateblue;
   display: flex;
@@ -206,6 +209,9 @@ img {
 }
 .mobile-nav a:last-child {
   margin-bottom: 0;
+}
+.mobile-nav a:hover {
+  text-decoration: underline;
 }
 .nav-open {
   right: 0%;
@@ -239,7 +245,6 @@ img {
   font-size: 3rem;
   text-decoration: none;
   padding: 0.5rem 1.5rem;
-  border: 1px solid darkslateblue;
   border-radius: 0.5rem;
   text-align: center;
 }
@@ -249,8 +254,8 @@ img {
   }
 }
 .home-page .main-content .banner .container .btn:hover {
-  color: darkslateblue;
-  background: white;
+  color: white;
+  background: orange;
 }
 .home-page .main-content .about .container h2 {
   margin-bottom: 2rem;
@@ -325,7 +330,6 @@ img {
   font-size: 3rem;
   text-decoration: none;
   padding: 0.5rem 1.5rem;
-  border: 1px solid darkslateblue;
   border-radius: 0.5rem;
   text-align: center;
 }
@@ -335,8 +339,8 @@ img {
   }
 }
 .home-page .collab .btn-two:hover {
-  color: darkslateblue;
-  background: white;
+  color: white;
+  background: orange;
 }
 .home-page .collab .container {
   text-align: center;
